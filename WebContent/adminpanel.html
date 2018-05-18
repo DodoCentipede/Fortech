@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Panel</title>
+    <style>
+        body{
+            margin:0px;
+            border:0px;
+        }
+        #header{
+            width:100%;
+            height: 120px;
+            background:black;
+            color:white;
+        }
+        #sidebar{
+            width:300px;
+            height:800px;
+            background:#006400;
+            float:left;
+        }
+        #data{
+            height:800px;
+            background:white;
+        }
+        #adminLogo{
+            background:white;
+            border-radius:50px;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width:50px;
+        }
+        ul li{
+            padding:20px;
+            border-radius:50px;
+            border-bottom:2px solid grey;
+        }
+        ul li:hover{
+            background:#c0392b;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+
+<div id="header">
+    <img src="images/images.jpg" alt=adminLogo" id="adminLogo"><br><div align="center">This is admin Planel.Please proceed with caution!</div>
+</div>
+
+<div id="sidebar">
+<ul>
+    <li>
+       <form action="MovieEntityController">
+       <input type="submit" name="button1" value="See the Movies">
+       </form>
+    </li>
+    <li>
+       <form action="MoviePlaceEntityController" method="post">
+       <input type="submit" name="button2" value="Check the Hours">
+       </form>
+    </li>
+    <li>
+        <form action="MovieTicketController" method="post">
+       <input type="submit" name="button3" value="Check the Users who bought a ticket">
+       </form>
+    </li>
+    <li>
+    	<form action="MovieEntityController">
+    	<input type="submit" name="button4" value="Logout">
+    	</form>
+    </li>
+</ul>
+</div>
+
+<div id="data">
+	<img src="images/giphy.gif" alt="Norway" style="width:74%">
+</div>
+
+</body>
+</html>
